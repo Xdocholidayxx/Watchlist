@@ -1,0 +1,183 @@
+/* Base window and widget styling */
+QMainWindow, QWidget {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+QLabel {
+    background-color: transparent;
+    border: none;
+}
+
+/* Frame styling */
+QFrame {
+    background-color: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    border-radius: 4px;
+}
+
+/* Remove borders from grid layout cells */
+QFrame QLayoutItem {
+    border: none;
+}
+
+QFrame > * {
+    border: none;
+}
+
+/* Remove spacing and margins from layouts within frames */
+QFrame QGridLayout {
+    margin: 0;
+    spacing: 0;
+}
+
+QFrame[frameShape="4"] {  /* QFrame::HLine */
+    background-color: #3d3d3d;
+    border: none;
+    min-height: 1px;
+    max-height: 1px;
+}
+
+QFrame[frameShape="5"] {  /* QFrame::VLine */
+    background-color: #3d3d3d;
+    border: none;
+    min-width: 1px;
+    max-width: 1px;
+}
+
+/* Push buttons */
+QPushButton {
+    background-color: #0d47a1;
+    border: 1px solid #1565c0;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 15px;
+}
+
+QPushButton:hover {
+    background-color: #1565c0;
+}
+
+QPushButton:pressed {
+    background-color: #0a3d8f;
+}
+
+QPushButton:disabled {
+    background-color: #4a4a4a;
+    border: 1px solid #555555;
+    color: #888888;
+}
+
+/* Input fields */
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+}
+
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
+    border: 1px solid #0d47a1;
+}
+
+/* ComboBox styling */
+QComboBox {
+    background-color: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox::down-arrow {
+    image: url(down_arrow.png);  /* You'll need to provide this image */
+}
+
+/* Menu and menu items */
+QMenuBar {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+QMenuBar::item:selected {
+    background-color: #0d47a1;
+}
+
+QMenu {
+    background-color: #2d2d2d;
+    border: 1px solid #3d3d3d;
+}
+
+QMenu::item:selected {
+    background-color: #0d47a1;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background-color: #2d2d2d;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #4d4d4d;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #555555;
+}
+
+QScrollBar:horizontal {
+    background-color: #2d2d2d;
+    height: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #4d4d4d;
+    min-width: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #555555;
+}
+
+/* Tab widget styling */
+QTabWidget::pane {
+    border: 1px solid #3d3d3d;
+}
+
+QTabBar::tab {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid #3d3d3d;
+}
+
+QTabBar::tab:selected {
+    background-color: #0d47a1;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #3d3d3d;
+}
+
+QChartView {
+    background-color: transparent;
+}
+
+/* Style for the chart widget container */
+#chartWidget {
+    background-color: #1e1e1e; /* Match your dark theme */
+    border: none;
+    min-height: 150px;
+}
