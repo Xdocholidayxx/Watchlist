@@ -158,10 +158,10 @@ install(FILES "${CMAKE_BINARY_DIR}/qt.conf"
 
 # CPack configuration
 set(CPACK_GENERATOR "TGZ")
-set(CPACK_PACKAGE_NAME "stinkbot")
+set(CPACK_PACKAGE_NAME "watchlist")
 set(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
-set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Stinkbot App.")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Watchlist App.")
 set(CPACK_PACKAGE_VENDOR "Robert J Szigeti III")
-set(CPACK_PACKAGING_INSTALL_PREFIX "/opt/stinkbot")
+set(CPACK_PACKAGING_INSTALL_PREFIX "/opt/watchlist")
 
 include(CPack)
